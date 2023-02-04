@@ -1,1 +1,0 @@
-# tripledelta.github.io
