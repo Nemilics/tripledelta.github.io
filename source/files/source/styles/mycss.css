@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
+
+body {
+  font-family: Poppins, serif;
+  background: linear-gradient(90deg, #3a5e96 0%, #000000 100%);
+}
+p {
+  color: aqua;
+}
+a {
+  text-decoration: none;
+}
+.nav-link {
+  color: rgb(85, 177, 146);
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(139, 139, 139);
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  width: 2em;
+}
+.navbar-toggler {
+  background-color: rgb(139, 139, 139);
+}
+
+.btn {
+  margin: 0.5rem;
+}
+
+.sidebar {
+  color: aquamarine;
+  background: linear-gradient(270deg, #3a5e96 0%, rgb(29, 26, 55) 100%);
+  border-radius: 0.5rem;
+}
+.card {
+  background: linear-gradient(270deg, #3a5e96 0%, rgb(29, 26, 55) 100%);
+  color: aquamarine;
+}
+.card a {
+  text-decoration: none;
+  color: aquamarine;
+}
+.slide-text,
+.footer-text {
+  color: aquamarine;
+  margin: auto auto;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.238);
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #3a5e96 0%, #000000 100%);
+  min-height: 5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+section {
+  margin-bottom: 9rem;
+  margin-top: 3rem;
+}
+.call {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+.btn-outline-primary{
+    background-color: aqua;
+    color: rgb(59, 59, 59);
+    border-width: 2px;
+}
+
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1.1);
+	}
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
